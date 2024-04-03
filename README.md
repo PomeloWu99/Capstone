@@ -1,41 +1,40 @@
 # Profit Margin Validation and Prediction with AMECO
 
 ## Table of Contents
-<table>
-  <tr>
-    <td valign="top"><b>1. Overview</b></td>
-    <td valign="top"><b>2. Introduction</b><br>
-      2.1 AMECO<br>
-      2.2 Problem Statements<br>
-      2.3 Project Goals<br>
-      2.4 Data
-    </td>
-    <td valign="top"><b>3. Profit Margin Validation</b><br>
-      3.1 Methods<br>
-      3.2 Results
-    </td>
-    <td valign="top"><b>4. Profit Margin Prediction</b><br>
-      4.1 Methods<br>
-      4.1.1 Machine Learning Model<br>
-      4.1.2 Time Series Model<br>
-      4.2 Results<br>
-      4.2.1 Model Results<br>
-      4.2.1 Model Comparison
-    </td>
-    <td valign="top"><b>5. Conclusion</b></td>
-    <td valign="top"><b>6. Resources</b></td>
-    <td valign="top"><b>7. Contributors</b></td>
-  </tr>
-</table>
+1. [Overview](#Overview)
+2. [Introduction](#Introduction)
+   2.1 [AMECO](#AMECO)
+   2.2 [Problem Statements](#Problem-Statements)
+   2.3 [Project Goals](#Project-Goals)
+   2.4 [Data](#Dataset)
+3. [Profit Margin Validation](#Profit-Margin-Validation)
+   3.1 [Methods](#Validation-Methods)
+   3.2 [Results](#Validation-Results)
+4. [Profit Margin Prediction](#Profit-Margin-Prediction)
+   4.1 [Methods](#Prediction-Methods)
+       4.1.1 [Machine Learning Model](#Machine-Learning-Model)
+       4.1.2 [Time Series Model](#Time-Series-Model)
+   4.2 [Results](#Results)
+       4.2.1 [Model Results](#Model_Results)
+       4.2.1 [Model Comparison](#Model_Comparison)
+5. [Conclusion](#Conclusion)
+6. [Resources](#Resources)
+7. [Contributors](#Contributors)
 
 
 ## Overview <a name="Overview"></a>
 
 ## Introduction <a name="Introduction"></a>
 
-This Capstone project is in collaboration with AMECO, a construction site services company.
+In the business world, profit margin serves as a critical measure of both overall business efficacy and product performance. This metric is derived by employing the formula: (Revenue - Cost) / Cost. A higher profit margin typically signifies a stronger return on the entire business operation, and a high margin on a specific product indicates a substantial return on that particular item. Conversely, a lower profit margin suggests a less favorable return. Additionally, examining historical profit margins can offer valuable insights for future pricing strategies. For instance, should a product consistently yield a profit margin of 12%, any increase in costs may necessitate an adjustment in its selling price to maintain financial stability and profitability. Consequently, companies establish a general target profit margin for the company and specific profit margins for each product, setting prices accordingly based on cost and desired profit margin. In practice, however, salespersons may not always adhere strictly to these target profit margins. Factors such as market competition, customer bargaining power, and promotional strategies often influence the final selling price, implying a flexible and strategic approach to pricing. 
+
+Our client, AMECO, a construction site services company, desires to the stickiness of current 
+
 
 ### AMECO Background <a name="AMECO"></a>
+
+This Capstone project is in collaboration with AMECO, a construction site services company. 
+
 
 ### Problem Statements <a name="Problem-Statements"></a>
 
