@@ -4,7 +4,7 @@
 1. [Overview](#Overview)
 
 2. [Introduction](#Introduction)
-   2.1 [AMECO](#AMECO)
+2.1 [AMECO](#AMECO)
    2.2 [Problem Statements](#Problem-Statements)
    2.3 [Project Goals](#Project-Goals)
    2.4 [Data](#Dataset)
