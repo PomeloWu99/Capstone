@@ -1,5 +1,28 @@
 # Capstone
 
+## Table of Contents
+1. [Abstract](#Abstract)
+2. [Introduction](#Introduction)  
+   2.1 [Proofpoint](#Proofpoint)
+3. [Methods](#Methods)  
+   3.1 [Overview](#Overview)  
+   3.2 [Knowledge Distillation](#Distillation)  
+   3.3 [Anchor Method](#Anchor)  
+   3.4 [Novel Method](#Novel)
+4. [Experiments](#Experiments)  
+   4.1. [Experiments: Existing Methods](#Experiments-Existing-Methods)  
+      4.1.1. [Experiment setup](#Experiment-setup)  
+      4.1.2. [Metrics](#Metrics)    
+      4.1.3. [Models](#Models)   
+      4.1.4. [Results](#Results)   
+   4.2. [Experiments: Novel Method](#Experiments-Novel-Method)  
+      4.2.1. [Experiment setup](#Experiment-setup)  
+5. [Conclusion](#Conclusion)  
+5. [Package](#Package)
+6. [Resources](#Resources)  
+7. [Contributors](#Contributors)
+
+
 This Capstone project is in collaboration with AMECO, a construction site services company.
 
 1. Problems & Motivations
