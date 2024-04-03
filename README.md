@@ -7,6 +7,7 @@
    2.2 [Problem Statements](#Problem-Statements)
    2.3 [Project Goals](#Project-Goals)
    2.4 [Data](#Dataset)
+       2.4.1 Data Cleaning(#Data-Cleaning)
 3. [Profit Margin Validation](#Profit-Margin-Validation)
    3.1 [Methods](#Validation-Methods)
    3.2 [Results](#Validation-Results)
@@ -28,6 +29,9 @@
 
 In the business world, profit margin serves as a critical measure of both overall business efficacy and product performance. This metric is derived by employing the formula: (Revenue - Cost) / Cost. A higher profit margin typically signifies a stronger return on the entire business operation, and a high margin on a specific product indicates a substantial return on that particular item. Conversely, a lower profit margin suggests a less favorable return. Additionally, examining historical profit margins can offer valuable insights for future pricing strategies. For instance, should a product consistently yield a profit margin of 12%, any increase in costs may necessitate an adjustment in its selling price to maintain financial stability and profitability. Consequently, companies establish a general target profit margin for the company and specific profit margins for each product, setting prices accordingly based on cost and desired profit margin. In practice, however, salespersons may not always adhere strictly to these target profit margins. Factors such as market competition, customer bargaining power, and promotional strategies often influence the final selling price, implying a flexible and strategic approach to pricing. 
 
+![alt text](image.png)
+CR: Investopedia
+
 Our client, AMECO, a construction site services company, currently undergoing more losses than they expected, desires to examine whether the actual profit margin for each product class has met its target profit margin over the last four years. They also aim to understand how can they price better to gain more profits. 
 
 
@@ -35,18 +39,28 @@ Our client, AMECO, a construction site services company, currently undergoing mo
 
 This Capstone project is in collaboration with AMECO, a construction site services company. It operates across different regions in the United States and primarily sells construction goods and welding equipment. Under these two major categories, each has hundereds of product lines. For instance, construction goods contain a product line called safety tools. Within each product line, there are dozens of products, for example, Hand Tools Plumb Bobs within the safety tools.
 
-The pricing of each product 
-
+The pricing of each product is primarily determined by its target profit margins and customers' loyalty level. There are three customer's loyalty level, `Good`, `Better`, and `Best.` Each customer category has slightly different target profit margins with the `Best` customer category has the lowest profit margins, then `Better` customer category, and finally `Good` customers. Product prices are then determined based on the target.
 
 ### Problem Statements <a name="Problem-Statements"></a>
 
+As salepersons might not strictly adhere to the selling price calculated by the target profit margins, AMECO wants to identify if there are significant magnitude of differences between the actual and target profit margins, and if these difference contributes to its profit margins to be overall lower. Additionally, they want to check if the current profit margins are optimal and reasonable to operate their business on. 
+
 ### Project Goals <a name="Project-Goals"></a>
 
-Our first goal is to validate their current profit margin. The idea is to find the profit margin for each product class and compare it with target margin.
+Based on the above problems, our project goals are two-fold. Our first goal is to validate their current profit margins. The idea is to find the profit margin for each product class and compare it with the corresponding target profit margin. After validating the current profit margins, if we find any differences, we want to find a reasonable profit margin for each product class. To achieve this, we intend to build a model for each product class to predict its profit margins and compare such with the target profit margins. Through these processes, we can help solve AMECO's concerns on their current profit margin performances and find better alternatives.
 
 ### Data <a name="Dataset"></a>
 
+Our original dataset contains 1,155,850 rows and 45 fields. 
+
+
+#### Data Cleaning <a name="Data-Cleaning"></a>
+
+
+
 ## Profit Margin Validation <a name="Profit-Margin-Validation"></a>
+
+Our first step is to validate current profit margins for each product class.
 
 ### Methods <a name="Validation-Methods"></a>
 
