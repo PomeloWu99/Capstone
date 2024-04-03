@@ -1,25 +1,32 @@
 # Profit Margin Validation and Prediction with AMECO
 
 ## Table of Contents
-1. [Overview](#Overview)
-2. [Introduction](#Introduction)
-   2.1 [AMECO](#AMECO)
-   2.2 [Problem Statements](#Problem-Statements)
-   2.3 [Project Goals](#Project-Goals)
-   2.4 [Data](#Dataset)
-3. [Profit Margin Validation](#Profit-Margin-Validation)
-   3.1 [Methods](#Validation-Methods)
-   3.2 [Results](#Validation-Results)
-4. [Profit Margin Prediction](#Profit-Margin-Prediction)
-   4.1 [Methods](#Prediction-Methods)
-       4.1.1 [Machine Learning Model](#Machine-Learning-Model)
-       4.1.2 [Time Series Model](#Time-Series-Model)
-   4.2 [Results](#Results)
-       4.2.1 [Model Results](#Model_Results)
-       4.2.1 [Model Comparison](#Model_Comparison)
-5. [Conclusion](#Conclusion)
-6. [Resources](#Resources)
-7. [Contributors](#Contributors)
+<table>
+  <tr>
+    <td valign="top"><b>1. Overview</b></td>
+    <td valign="top"><b>2. Introduction</b><br>
+      2.1 AMECO<br>
+      2.2 Problem Statements<br>
+      2.3 Project Goals<br>
+      2.4 Data
+    </td>
+    <td valign="top"><b>3. Profit Margin Validation</b><br>
+      3.1 Methods<br>
+      3.2 Results
+    </td>
+    <td valign="top"><b>4. Profit Margin Prediction</b><br>
+      4.1 Methods<br>
+      4.1.1 Machine Learning Model<br>
+      4.1.2 Time Series Model<br>
+      4.2 Results<br>
+      4.2.1 Model Results<br>
+      4.2.1 Model Comparison
+    </td>
+    <td valign="top"><b>5. Conclusion</b></td>
+    <td valign="top"><b>6. Resources</b></td>
+    <td valign="top"><b>7. Contributors</b></td>
+  </tr>
+</table>
 
 
 ## Overview <a name="Overview"></a>
