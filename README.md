@@ -8,8 +8,7 @@
    2.2 [Problem Statements](#Problem-Statements)
    2.3 [Project Goals](#Project-Goals)
    2.4 [Data](#Dataset)
-       2.4.1 Data Cleaning(#Data-Cleaning)
-
+       2.4.1 [Data Cleaning](#Data-Cleaning)
 3. [Profit Margin Validation](#Profit-Margin-Validation)
    3.1 [Methods](#Validation-Methods)
    3.2 [Results](#Validation-Results)
@@ -89,7 +88,7 @@ Finally, we also calculated the profit margin for each transaction. The formula 
 
 Eventually we created a new dataset 568,081 rows with 17 columns (`Customer Name`, `Product Category`, `Own`, `Year`, `Month`, `Quarter`, `Prev Quarter`, `Date`, `Group`, `Product Class`, `Specific Item`, `Quantity`, `Cost`, `Price`, `State`, `Stock`,`Profit Margin`)
 
-![alt text](table_demo.png)
+![alt text](https://github.com/PomeloWu99/Capstone/blob/main/05%20Supplementary/table_demo.png)
 This table randomly sampled 10 rows for demonstration purpose. 
 
 ## Profit Margin Validation <a name="Profit-Margin-Validation"></a>
