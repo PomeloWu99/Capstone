@@ -105,7 +105,11 @@ For each transaction row, we calculate the profit margin based on (price-cost)/p
 
 ### Results <a name="Validation-Results"></a>
 
-![image](https://github.com/PomeloWu99/Capstone/assets/100142240/5d6e840d-ffe9-499e-a462-38654aa6ebdb)
+![alt text](image.png)
+
+After we set the range to be [-25, 25] as suggested by our client, we generated a new graph to visualize the trend over past four years and across different customer categories.
+
+![alt text](image-1.png)
 
 ## Profit Margin Prediction <a name="Profit-Margin-Prediction"></a>
 
