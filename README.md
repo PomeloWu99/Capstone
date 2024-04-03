@@ -2,15 +2,18 @@
 
 ## Table of Contents
 1. [Overview](#Overview)
+
 2. [Introduction](#Introduction)
    2.1 [AMECO](#AMECO)
    2.2 [Problem Statements](#Problem-Statements)
    2.3 [Project Goals](#Project-Goals)
    2.4 [Data](#Dataset)
        2.4.1 Data Cleaning(#Data-Cleaning)
+
 3. [Profit Margin Validation](#Profit-Margin-Validation)
    3.1 [Methods](#Validation-Methods)
    3.2 [Results](#Validation-Results)
+
 4. [Profit Margin Prediction](#Profit-Margin-Prediction)
    4.1 [Methods](#Prediction-Methods)
        4.1.1 [Machine Learning Model](#Machine-Learning-Model)
@@ -18,8 +21,11 @@
    4.2 [Results](#Results)
        4.2.1 [Model Results](#Model_Results)
        4.2.1 [Model Comparison](#Model_Comparison)
+
 5. [Conclusion](#Conclusion)
+
 6. [Resources](#Resources)
+
 7. [Contributors](#Contributors)
 
 
@@ -51,11 +57,40 @@ Based on the above problems, our project goals are two-fold. Our first goal is t
 
 ### Data <a name="Dataset"></a>
 
-Our original dataset contains 1,155,850 rows and 45 fields. 
+Our original dataset spanning from 2016 to 2023 contains 1,155,850 rows and 45 fields. These 45 fields can be categorized into 3 major categories, including product information, pricing information, and other information. Wihtin product information, we have `product category`, `product class`, `specific item` names and all corresponding number identification, `date of transaction`, `stock status`. Within pricing information, we have `quantity`, `cost`, `customer categories`, and `prices`. We also have some available information about `geographics`, `buyer companies`, and `salespersons`.
 
+The original dataset, however, has many missing information. AMECO underwent a system migration in 2019; as a result, the geographic data is missing prior to 2020. The dates of transaction prior to 2020 are coalesced into the 01-01. 
+
+We also obtain two other datasets, one with more detailed client information with company and corresponding customer category, and the other one with target profit margins for each product class in 2023.
 
 #### Data Cleaning <a name="Data-Cleaning"></a>
 
+1. Data Quality Check & Missing & Imputation
+
+We first checked each column with missing information, and tried to come up with an imputation method to fill in those missing information. 
+
+We examined the customer information, including `customer number`, `customer name`, and `customer category.` Initially we found the customer number and customer name were not one-on-one relationship, and then we enforced a consistent customer number format and stripped all additional punctuations from the customer name column. Then we paired these two fields and impute those with missing values. Finally we merged the updated customer category information from AMECO and obtained complete and quality data for `customer number`, `customer name`, and `customer category.`
+
+We then examined the product information. Half of the product category and product class are missing in the original dataset, however, we did have complete product number information. As a result, we used the mode imputation because the product category only has two major categories and it will be straightforward and reasonable to fill in based on mode values. As for the product class we first tried to fill in missing information through pairing. We paired the item number with existing product class and category, and used this to infer information. For those that are still missing, we then used mode imputation.
+
+Finally, we also filled in stock status information based on our client suggestions and used two complementary columns strikeforce flag and stock. The stock is the primary indicator and for those missing stock information, we used strikeforce flag to fill in stock status. The remaining ones are automatically deemed 'in-stock' because this is a more common case.
+
+2. Data Fields Selection
+
+Based on our project goals, we limited the time span from 2020 to 2023 to obtain valid and valuable data for analysis. Additionally, we utilized our client's domain knowledge to select out important fields, including `product category`, `product class`, `specific item`, `date of transaction`, `quantity`, `cost`, `customer categories`, and `prices` in our profit margin validation and prediction processes.
+
+3. Data Manipulation
+
+In the dataset, we have completed date information such as '2023-04-16' and we retrieved `Year` `Month` `Quarter` and `Previous Quarter` to prepare for date analysis.
+
+We also marked AMECO's sub companies to boolean value and stored it to a column called `Own` because we believed the selling prices to sub companies are biased.
+
+Finally, we also calculated the profit margin for each transaction. The formula is (price * quantity - cost * quantity)/price * quantity, here we can take out the quantity and calculated it as (price - cost)/price.
+
+Eventually we created a new dataset 568,081 rows with 17 columns (`Customer Name`, `Product Category`, `Own`, `Year`, `Month`, `Quarter`, `Prev Quarter`, `Date`, `Group`, `Product Class`, `Specific Item`, `Quantity`, `Cost`, `Price`, `State`, `Stock`,`Profit Margin`)
+
+![alt text](image-1.png)
+This table randomly sampled 10 rows for demonstration purpose. 
 
 
 ## Profit Margin Validation <a name="Profit-Margin-Validation"></a>
