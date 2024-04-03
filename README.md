@@ -2,7 +2,7 @@
 
 ## Table of Contents
 1. [Overview](#Overview)
-2. [Introduction](#Introduction)  
+2. [Introduction](#Introduction)
    2.1 [AMECO](#AMECO)
    2.2 [Problem Statements](#Problem-Statements)
    2.3 [Project Goals](#Project-Goals)
@@ -12,13 +12,13 @@
    3.2 [Results](#Validation-Results)
 4. [Profit Margin Prediction](#Profit-Margin-Prediction)
    4.1 [Methods](#Prediction-Methods)
-   4.1.1 [Machine Learning Model](#Machine-Learning-Model)
-   4.1.2 [Time Series Model](#Time-Series-Model)
+       4.1.1 [Machine Learning Model](#Machine-Learning-Model)
+       4.1.2 [Time Series Model](#Time-Series-Model)
    4.2 [Results](#Results)
-   4.2.1 [Model Results](#Model_Results)
-   4.2.1 [Model Comparison](#Model_Comparison)
-5. [Conclusion](#Conclusion)  
-6. [Resources](#Resources)  
+       4.2.1 [Model Results](#Model_Results)
+       4.2.1 [Model Comparison](#Model_Comparison)
+5. [Conclusion](#Conclusion)
+6. [Resources](#Resources)
 7. [Contributors](#Contributors)
 
 
