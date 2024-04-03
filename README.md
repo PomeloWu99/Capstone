@@ -37,8 +37,8 @@ In the business world, profit margin serves as a critical measure of both overal
 
 <img src="pm_demo.png" alt="alt text" height="400" width="600"/>
 Credit To: <a href="https://www.investopedia.com/terms/p/profitmargin.asp">Investopedia</a>
-<br>
-Our client, AMECO, a construction site services company, currently undergoing more losses than they expected, desires to examine whether the actual profit margin for each product class has met its target profit margin over the last four years. They also aim to understand how can they price better to gain more profits. 
+
+</br>Our client, AMECO, a construction site services company, currently undergoing more losses than they expected, desires to examine whether the actual profit margin for each product class has met its target profit margin over the last four years. They also aim to understand how can they price better to gain more profits. 
 
 
 ### AMECO Background <a name="AMECO"></a>
