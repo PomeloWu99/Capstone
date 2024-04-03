@@ -28,12 +28,14 @@
 
 In the business world, profit margin serves as a critical measure of both overall business efficacy and product performance. This metric is derived by employing the formula: (Revenue - Cost) / Cost. A higher profit margin typically signifies a stronger return on the entire business operation, and a high margin on a specific product indicates a substantial return on that particular item. Conversely, a lower profit margin suggests a less favorable return. Additionally, examining historical profit margins can offer valuable insights for future pricing strategies. For instance, should a product consistently yield a profit margin of 12%, any increase in costs may necessitate an adjustment in its selling price to maintain financial stability and profitability. Consequently, companies establish a general target profit margin for the company and specific profit margins for each product, setting prices accordingly based on cost and desired profit margin. In practice, however, salespersons may not always adhere strictly to these target profit margins. Factors such as market competition, customer bargaining power, and promotional strategies often influence the final selling price, implying a flexible and strategic approach to pricing. 
 
-Our client, AMECO, a construction site services company, desires to the stickiness of current 
+Our client, AMECO, a construction site services company, currently undergoing more losses than they expected, desires to examine whether the actual profit margin for each product class has met its target profit margin over the last four years. They also aim to understand how can they price better to gain more profits. 
 
 
 ### AMECO Background <a name="AMECO"></a>
 
-This Capstone project is in collaboration with AMECO, a construction site services company. 
+This Capstone project is in collaboration with AMECO, a construction site services company. It operates across different regions in the United States and primarily sells construction goods and welding equipment. Under these two major categories, each has hundereds of product lines. For instance, construction goods contain a product line called safety tools. Within each product line, there are dozens of products, for example, Hand Tools Plumb Bobs within the safety tools.
+
+The pricing of each product 
 
 
 ### Problem Statements <a name="Problem-Statements"></a>
