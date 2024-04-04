@@ -134,12 +134,21 @@ After we set the range to be [-25, 25] as suggested by our client, we generated 
 ## Profit Margin Prediction <a name="Profit-Margin-Prediction"></a>
 
 ### Methods <a name="Prediction-Methods"></a>
+The profit margin prediction for AMECO was executed using two primary modeling approaches to address the unique challenges of the dataset.
 
 #### Machine Learning Model <a name="Machine-Learning-Model"></a>
+We implemented several machine learning models, and Random Forest has the best performance with relatively low RMSE about 6.97, known for its strong performance in capturing non-linear interactions within complex datasets. The model was trained on variables that included temporal aspects like the month and customer categories, to predict profit margins for hundreds of AMECO’s product classes.
 
 #### Time Series Model <a name="Time-Series-Model"></a>
+Through rigorous exploratory data analysis, our models detected a seasonal pattern peaking between July and September, as well as a positive shift post-pandemic. So, we decided to implement time series models to predict more realistic profit margins. Our time series analysis employed two models, ARIMAX and Prophet. For ARIMAX, it takes advantage of its capacity to capture both stationary and non-stationary trends, and external categorical variables into the forecast. This model allowed us to extend our predictions by considering the influence of time-dependent trends and customer segmentation on profit margins. The RMSE for ARIMAX is 8.99. For Prophet, developed by Google, it is sensitive to seasonal patterns and events, like Christmas and accidental events, and robust to shifts in the trend. It turns out that the RMSE for ARIMAX is 8.99.
 
 ### Results <a name="Results"></a>
+4.2.1 Results for Different Product Classes
+While the RMSE detailed in 4.1.2 reflects an average measure across all product classes, our investigation revealed significant variation in performance between different categories. For instance, the 'Safety Tools' category showed a notably precise RMSE of 1.63, indicating a high level of accuracy in our forecasts for this class. The forecasts closely followed the observed data points, and the confidence intervals were consistently tight, reflecting the model's confidence in its predictions.
+
+
+Conversely, the 'Abrasive Miscellaneous' category presented a substantially higher RMSE of 18.56, suggesting greater variability in predictive accuracy for this class. The observed data points displayed a wide spread around the forecast line, and the broader confidence intervals indicated a higher level of uncertainty in the model's predictions.
+
 
 #### Model Results <a name="Model-Results"></a>
 
