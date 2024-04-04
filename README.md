@@ -97,13 +97,33 @@ This table randomly sampled 10 rows for demonstration purpose.
 
 ## Profit Margin Validation <a name="Profit-Margin-Validation"></a>
 
-Our first step is to validate current profit margins for each product class.
+The primary goal of AMECO is to validate its current pricing model. The current pricing model predicts a target profit margin for each product class and customer category. Then the salesperson will use the target margin as a reference to set a final price based on a variety of factors including the customer loyalty, quantity, etc. We want to examine whether each product class’ actual profit margin meets the target profit margin in each customer category.
+Profit Margin = Profit / Revenue * 100%
+It represents the proportion of revenue that is earned by the company.
+
 
 ### Methods <a name="Validation-Methods"></a>
 
-For each transaction row, we calculate the profit margin based on (price-cost)/price since the quantity will be removed from our formula. Then we took the median of each product class in different years.
+To validate whether each product class’ actual profit margin meets the corresponding profit margin in each customer category, we take two steps: exploratory data analysis and statistical tests.
+For each transaction row, we calculate the profit margin based on (price-cost)/price since the quantity will be canceled out from our formula. Then we took the median of each product class in different years. We took the median instead of the average or the ratio between total profit and total revenue because we did not want those extreme values to dominate the actual margins. 
+1. Exploratory Data Analysis
+In exploratory data analysis, we aim at using graphs to let a non-technical audience detect trends in profit margins across different product classes and customer categories, identify any outliers or anomalies in the data, and understand the distribution and variability of profit margins within each category. This visual approach helps to quickly grasp the overall performance and spot areas that may require further investigation or adjustment in the pricing strategy.
+We used a series of scatter plots to illustrate the profit margin trends. The x-axis represents the product class. Because there are hundreds of product classes under each product category and we are interested in the general trend, the name of each product class is not included. (We plan to make an interactive plot that shows the class name when the cursor moves over a point in the scatter plot.) The y-axis represents the difference between the actual margin and target margin, which is expected to be equal or larger than zero to maximize profitability. The scatter plots are plotted from 2020 to 2023 for each customer category. We can then visualize the trend changes across the past four years and different performances among customer categories. The main idea of generating these scatter plots is to validate the actual and target profit margins and observe the patterns and trends of changes in profit margins.
+2. Statistical Tests
+To further investigate the patterns observed in the exploratory data analysis, we will use statistical tests to determine the statistical significance of the differences between actual and target profit margins across different product classes and customer categories, as well as to analyze the trends over the four-year period.
+In particular, we used paired t-tests to compare the mean difference between the actual and target profit margins for each customer category and product category in each year. This test helps us assess whether the observed differences in profit margins are statistically significant and not just due to random chance. By pairing the actual and target margins for each class and category, we can directly examine whether the actual margins consistently meet, exceed, or fall short of the targets, providing a clear statistical insight into the effectiveness of the pricing strategy over the studied period.
+
 
 ### Results <a name="Validation-Results"></a>
+1. Scatter plots analysis
+From the scatter plots, we can find there exists some outliers with extremely high (eg. 60%) or extremely low (eg. -300%) differences. Moreover, most points are clustered below zero line, which means most product classes cannot achieve the target profit margins.
+The next step is to zoom into the range where most points are located. After we set the range to be [-25, 25] as suggested by our client, we generated a new graph to visualize the trend over the past four years and across different customer categories.
+
+When comparing scatter plots sequentially from left to right, we observe a clear trend of data points becoming increasingly clustered around zero. This clustering indicates that more product classes are hitting their target margins as time progresses. Furthermore, the degree of clustering varies by customer category: 'best' customers show the most significant improvement, with points most densely packed around zero, suggesting a strong alignment with target margins. In contrast, 'good' customers exhibit the least clustering, indicating a relatively weaker performance in achieving target margins. In summary, the trend over time reveals that a higher number of product classes are meeting their target margins, with the 'best' customer category showing the most substantial improvement, while the 'good' customer category lags behind.
+
+2. Paired t-test
+Examining the p-value table for construction supplies items reveals a gentle upward trend in p-values from 2020 to 2022, followed by a significant surge from 2022 to 2023. Higher p-values suggest diminishing evidence against the null hypothesis, which posits no difference between actual and target margins. Consequently, the gradual increase through 2020 to 2022 and the marked rise in 2023 suggest an overall trend of more product classes meeting their target margins, with 2023 showcasing notable improvement. Specifically, the p-values for 2023 highlight that 'best' customers are closely aligned with target margins, demonstrating strong performance. Conversely, 'good' customers exhibit relatively weaker performance in reaching target margins, as inferred from their lower p-values. 
+
 
 ![alt text](image.png)
 
