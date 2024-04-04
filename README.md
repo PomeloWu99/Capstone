@@ -27,12 +27,12 @@
 
 7. [Conclusion](#Conclusion)
 
-8. [Resources](#Resources)
-
-9. [Contributors](#Contributors)
+8. [Contributors](#Contributors)
 
 
 ## Overview <a name="Overview"></a>
+
+Profit margins are an important metric in business. Our client, observing unexpected losses, asked us to help validate profit margins for their product lines. In this project, we used cleaned data from AMECO to first help validate differences between actual and expected profit margins. Then we used statistical tests to determine the statistical significance. Given the existence of differences between actual and expected profit margins, we then utilized Random Forest, ARIMAX, and Prophet models to predict the profit margins. We then compared such results and generated predictions of profit margin in 2024 for our client.
 
 ## Introduction <a name="Introduction"></a>
 
@@ -143,14 +143,23 @@ We implemented several machine learning models, and Random Forest has the best p
 Through rigorous exploratory data analysis, our models detected a seasonal pattern peaking between July and September, as well as a positive shift post-pandemic. So, we decided to implement time series models to predict more realistic profit margins. Our time series analysis employed two models, ARIMAX and Prophet. For ARIMAX, it takes advantage of its capacity to capture both stationary and non-stationary trends, and external categorical variables into the forecast. This model allowed us to extend our predictions by considering the influence of time-dependent trends and customer segmentation on profit margins. The RMSE for ARIMAX is 8.99. For Prophet, developed by Google, it is sensitive to seasonal patterns and events, like Christmas and accidental events, and robust to shifts in the trend. It turns out that the RMSE for ARIMAX is 8.99.
 
 ### Results <a name="Results"></a>
-4.2.1 Results for Different Product Classes
-While the RMSE detailed in 4.1.2 reflects an average measure across all product classes, our investigation revealed significant variation in performance between different categories. For instance, the 'Safety Tools' category showed a notably precise RMSE of 1.63, indicating a high level of accuracy in our forecasts for this class. The forecasts closely followed the observed data points, and the confidence intervals were consistently tight, reflecting the model's confidence in its predictions.
-
-
-Conversely, the 'Abrasive Miscellaneous' category presented a substantially higher RMSE of 18.56, suggesting greater variability in predictive accuracy for this class. The observed data points displayed a wide spread around the forecast line, and the broader confidence intervals indicated a higher level of uncertainty in the model's predictions.
-
 
 #### Model Results <a name="Model-Results"></a>
 
 #### Model Comparison <a name="Model-Comparison"></a>
 
+Results for Different Product Classes
+
+While the RMSE detailed in 4.1.2 reflects an average measure across all product classes, our investigation revealed significant variation in performance between different categories. For instance, the 'Safety Tools' category showed a notably precise RMSE of 1.63, indicating a high level of accuracy in our forecasts for this class. The forecasts closely followed the observed data points, and the confidence intervals were consistently tight, reflecting the model's confidence in its predictions.
+
+![image](https://github.com/PomeloWu99/Capstone/assets/100142240/23853f99-27c6-4249-9c03-93083898d6dd)
+
+
+Conversely, the 'Abrasive Miscellaneous' category presented a substantially higher RMSE of 18.56, suggesting greater variability in predictive accuracy for this class. The observed data points displayed a wide spread around the forecast line, and the broader confidence intervals indicated a higher level of uncertainty in the model's predictions.
+
+![image](https://github.com/PomeloWu99/Capstone/assets/100142240/76a7b847-2999-4b50-b3f7-18dfe028e667)
+
+
+## Conclusion <a name="Conclusion"></a>
+
+In conclusion, we used visualization to identify pattern changes in the differences between actual and target profit margins, and statistical test to confirm the significance of such differences. As for profit margin predictions, we discovered the Random Forest to be the best performing model. This finding is in contrast of the time series nature of our data. However, we believe it is due to the complexities of product lines. While time series model performs well in some product lines, it performs relatively worse in other product lines. As a result, we believe we can use a combination of the Random Forest, Prophet, and ARIMAX to help our client find the optimal profit margins for each product.
