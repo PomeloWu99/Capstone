@@ -137,14 +137,19 @@ After we set the range to be [-25, 25] as suggested by our client, we generated 
 The profit margin prediction for AMECO was executed using two primary modeling approaches to address the unique challenges of the dataset.
 
 #### Machine Learning Model <a name="Machine-Learning-Model"></a>
-We implemented several machine learning models, and Random Forest has the best performance with relatively low RMSE about 6.97, known for its strong performance in capturing non-linear interactions within complex datasets. The model was trained on variables that included temporal aspects like the month and customer categories, to predict profit margins for hundreds of AMECO’s product classes.
+Random Forest is known for its strong performance in capturing non-linear interactions within complex datasets. The model was trained on variables that included temporal aspects like the month and customer categories, to predict profit margins for hundreds of AMECO’s product classes.
 
 #### Time Series Model <a name="Time-Series-Model"></a>
-Through rigorous exploratory data analysis, our models detected a seasonal pattern peaking between July and September, as well as a positive shift post-pandemic. So, we decided to implement time series models to predict more realistic profit margins. Our time series analysis employed two models, ARIMAX and Prophet. For ARIMAX, it takes advantage of its capacity to capture both stationary and non-stationary trends, and external categorical variables into the forecast. This model allowed us to extend our predictions by considering the influence of time-dependent trends and customer segmentation on profit margins. The RMSE for ARIMAX is 8.99. For Prophet, developed by Google, it is sensitive to seasonal patterns and events, like Christmas and accidental events, and robust to shifts in the trend. It turns out that the RMSE for ARIMAX is 8.99.
+Through rigorous exploratory data analysis, our models detected a seasonal pattern peaking between July and September, as well as a positive shift post-pandemic. So, we decided to implement time series models to predict more realistic profit margins. Our time series analysis employed two models, ARIMAX and Prophet. For ARIMAX, it takes advantage of its capacity to capture both stationary and non-stationary trends, and external categorical variables into the forecast. This model allowed us to extend our predictions by considering the influence of time-dependent trends and customer segmentation on profit margins. 
 
 ### Results <a name="Results"></a>
 
 #### Model Results <a name="Model-Results"></a>
+
+We implemented several machine learning models, and Random Forest has the best performance with relatively low RMSE about 6.97, The RMSE for ARIMAX is 8.99. For Prophet, developed by Google, it is sensitive to seasonal patterns and events, like Christmas and accidental events, and robust to shifts in the trend. It turns out that the RMSE for ARIMAX is 8.99.
+
+<img width="700" alt="image" src="https://github.com/PomeloWu99/Capstone/assets/100142240/4bcf82db-eff2-4c53-a8a2-cedd72bd6914">
+
 
 #### Model Comparison <a name="Model-Comparison"></a>
 
