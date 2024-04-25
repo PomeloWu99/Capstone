@@ -117,15 +117,19 @@ In particular, we used paired t-tests to compare the mean difference between the
 ### Results <a name="Validation-Results"></a>
 1. Scatter plots analysis
 From the scatter plots, we can find there exists some outliers with extremely high (eg. 60%) or extremely low (eg. -300%) differences. Moreover, most points are clustered below zero line, which means most product classes cannot achieve the target profit margins.
+
+![alt text](image.png)
+
 The next step is to zoom into the range where most points are located. After we set the range to be [-25, 25] as suggested by our client, we generated a new graph to visualize the trend over the past four years and across different customer categories.
 
 When comparing scatter plots sequentially from left to right, we observe a clear trend of data points becoming increasingly clustered around zero. This clustering indicates that more product classes are hitting their target margins as time progresses. Furthermore, the degree of clustering varies by customer category: 'best' customers show the most significant improvement, with points most densely packed around zero, suggesting a strong alignment with target margins. In contrast, 'good' customers exhibit the least clustering, indicating a relatively weaker performance in achieving target margins. In summary, the trend over time reveals that a higher number of product classes are meeting their target margins, with the 'best' customer category showing the most substantial improvement, while the 'good' customer category lags behind.
 
 2. Paired t-test
-Examining the p-value table for construction supplies items reveals a gentle upward trend in p-values from 2020 to 2022, followed by a significant surge from 2022 to 2023. Higher p-values suggest diminishing evidence against the null hypothesis, which posits no difference between actual and target margins. Consequently, the gradual increase through 2020 to 2022 and the marked rise in 2023 suggest an overall trend of more product classes meeting their target margins, with 2023 showcasing notable improvement. Specifically, the p-values for 2023 highlight that 'best' customers are closely aligned with target margins, demonstrating strong performance. Conversely, 'good' customers exhibit relatively weaker performance in reaching target margins, as inferred from their lower p-values. 
+Examining the p-value table for construction supplies items reveals a gentle upward trend in p-values from 2020 to 2022, followed by a significant surge from 2022 to 2023. Higher p-values suggest diminishing evidence against the null hypothesis, which posits no difference between actual and target margins. Consequently, the gradual increase through 2020 to 2022 and the marked rise in 2023 suggest an overall trend of more product classes meeting their target margins, with 2023 showcasing notable improvement. Specifically, the p-values for 2023 highlight that 'best' customers are closely aligned with target margins, demonstrating strong performance. Conversely, 'good' customers exhibit relatively weaker performance in reaching target margins, as inferred from their lower p-values.
+
+<img width="358" alt="image" src="https://github.com/PomeloWu99/Capstone/assets/100142240/0b28ea68-f28e-43b3-95bf-a8f0278e4459">
 
 
-![alt text](image.png)
 
 After we set the range to be [-25, 25] as suggested by our client, we generated a new graph to visualize the trend over past four years and across different customer categories.
 
