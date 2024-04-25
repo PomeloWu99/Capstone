@@ -153,8 +153,9 @@ Through rigorous exploratory data analysis, our models detected a seasonal patte
 
 We implemented several machine learning models, and Random Forest has the best performance with relatively low RMSE about 6.97, The RMSE for ARIMAX is 8.99. For Prophet, developed by Google, it is sensitive to seasonal patterns and events, like Christmas and accidental events, and robust to shifts in the trend. It turns out that the RMSE for ARIMAX is 8.99.
 
+<p align="center">
 <img width="700" alt="image" src="https://github.com/PomeloWu99/Capstone/assets/100142240/4bcf82db-eff2-4c53-a8a2-cedd72bd6914">
-
+</p>
 
 #### Model Comparison <a name="Model-Comparison"></a>
 
