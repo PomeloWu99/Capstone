@@ -127,8 +127,9 @@ When comparing scatter plots sequentially from left to right, we observe a clear
 2. Paired t-test
 Examining the p-value table for construction supplies items reveals a gentle upward trend in p-values from 2020 to 2022, followed by a significant surge from 2022 to 2023. Higher p-values suggest diminishing evidence against the null hypothesis, which posits no difference between actual and target margins. Consequently, the gradual increase through 2020 to 2022 and the marked rise in 2023 suggest an overall trend of more product classes meeting their target margins, with 2023 showcasing notable improvement. Specifically, the p-values for 2023 highlight that 'best' customers are closely aligned with target margins, demonstrating strong performance. Conversely, 'good' customers exhibit relatively weaker performance in reaching target margins, as inferred from their lower p-values.
 
-<img width="358" alt="image" src="https://github.com/PomeloWu99/Capstone/assets/100142240/0b28ea68-f28e-43b3-95bf-a8f0278e4459">
-
+<p align="center">
+  <img width="358" alt="image" src="https://github.com/PomeloWu99/Capstone/assets/100142240/0b28ea68-f28e-43b3-95bf-a8f0278e4459">
+</p>
 
 
 After we set the range to be [-25, 25] as suggested by our client, we generated a new graph to visualize the trend over past four years and across different customer categories.
