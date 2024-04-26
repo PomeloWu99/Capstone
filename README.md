@@ -161,12 +161,12 @@ We implemented several machine learning models, and Random Forest has the best p
 
 Results for Different Product Classes
 
-While the RMSE detailed in 4.1.2 reflects an average measure across all product classes, our investigation revealed significant variation in performance between different categories. For instance, the 'Safety Tools' category showed a notably precise RMSE of 1.63, indicating a high level of accuracy in our forecasts for this class. The forecasts closely followed the observed data points, and the confidence intervals were consistently tight, reflecting the model's confidence in its predictions.
+While the RMSE detailed in 4.1.2 reflects an average measure across all product classes, our investigation revealed significant variation in performance between different categories. For instance, the 'Safety Tools' category showed a notably precise RMSE of 1.63, indicating a high level of accuracy in our forecasts for this class. The forecasts closely followed the observed data points, reflecting the model's confidence in its predictions.
 
 ![image](https://github.com/PomeloWu99/Capstone/assets/100142240/23853f99-27c6-4249-9c03-93083898d6dd)
 
 
-Conversely, the 'Abrasive Miscellaneous' category presented a substantially higher RMSE of 18.56, suggesting greater variability in predictive accuracy for this class. The observed data points displayed a wide spread around the forecast line, and the broader confidence intervals indicated a higher level of uncertainty in the model's predictions.
+Conversely, the 'Abrasive Miscellaneous' category presented a substantially higher RMSE of 18.56, suggesting greater variability in predictive accuracy for this class. The observed data points displayed a wide spread around the forecast line, indicating a higher level of uncertainty in the model's predictions.
 
 ![image](https://github.com/PomeloWu99/Capstone/assets/100142240/76a7b847-2999-4b50-b3f7-18dfe028e667)
 
